@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+<body onload="fetchTodo()">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col">
+                <h2 class="text-primary text-center shadow p-3">Todo Application</h2>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-9">
+                <input type="text" class="form-control border border-2" id="title">
+            </div>
+            <div class="col-3">
+                <button class="btn btn-success" onclick="saveTodo()">Save</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <table class="table table-bordered text-center " id="todo-table">
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="storage.js"></script>
+</body>
+</html
